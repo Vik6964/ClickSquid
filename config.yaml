@@ -1,0 +1,5 @@
+host: localhost
+database: clicksquid
+table: access_logs
+user: clicksquid_user
+pass: clicksquid_pass
