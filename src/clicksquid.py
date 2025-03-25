@@ -17,4 +17,5 @@ class ClickSquid:
                     self.client.insert(log_line.line)
                 except Exception as e:
                     with open(self.error_file_path, 'a') as error_file:
-                        error_file.write(f"{datetime.now().strftime('%Y-%m-%d %H:%M:%S')} - {e}\n")
+                        error_file.write(f"{log_line.line}\n")
+                        error_file.write(f"{e}\n")
